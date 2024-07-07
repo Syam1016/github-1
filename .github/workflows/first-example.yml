@@ -8,9 +8,9 @@ jobs:
         steps:
         - name: Checkout Repo
           uses: actions/checkout@v4
-          
-        - name: Welcome Message
-          run: echo "My First Git Actions Job"
 
-        - name: List Files
-          run: ls -ltr    
+        - name: Multi Commands
+          run: |
+            echo "My First Git Actions Job"
+            ls -ltra
+            cat README.md
